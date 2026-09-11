@@ -114,6 +114,111 @@ body {
   line-height: 1.6;
 }
 
+/* ----------------------------- */
+/* FORMULARIO REGISTRO */
+.formulario-principal {
+  flex: 1;
+  background-color: #f8f5ef;
+  padding: 60px 0;
+}
+
+.seccion-formulario {
+  width: 100%;
+}
+
+.contenedor-formulario {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 35px;
+  border: 1px solid #ddd3c5;
+  border-radius: 12px;
+}
+
+.contenedor-formulario h1 {
+  text-align: center;
+  color: #2c241b;
+  margin-bottom: 10px;
+}
+
+.texto-formulario {
+  text-align: center;
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+/* CAMPOS */
+.contenedor-formulario .form-label {
+  color: #2c241b;
+  font-weight: 500;
+}
+
+.contenedor-formulario .form-control,
+.contenedor-formulario .form-select {
+  border: 1px solid #cfc5b7;
+}
+
+.contenedor-formulario .form-control:focus,
+.contenedor-formulario .form-select:focus {
+  border-color: #b8893d;
+  box-shadow: 0 0 0 3px rgba(184, 137, 61, 0.2);
+}
+
+/* RESTRICCIONES */
+.restricciones-registro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+}
+
+.form-check-label {
+  color: #3b332a;
+}
+
+/* RECETAS DE INTERES */
+.receta-interes {
+  background-color: #f6f1e9;
+  border: 1px solid #ddd3c5;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.btn-outline-gourmet {
+  color: #946d30;
+  border: 1px solid #946d30;
+}
+
+.btn-outline-gourmet:hover {
+  background-color: #946d30;
+  color: #ffffff;
+}
+
+/* MENSAJES */
+.mensaje-error {
+  color: #c0392b;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* ENLACE LOGIN */
+.enlace-formulario {
+  text-align: center;
+  color: #666666;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.enlace-formulario a {
+  color: #946d30;
+  text-decoration: none;
+}
+
+.enlace-formulario a:hover {
+  text-decoration: underline;
+}
+
 /* FOOTER */
 .footer-gourmet {
   background-color: #17140f;
@@ -162,5 +267,18 @@ body {
 
   .logo-gourmet {
     width: 70px;
+  }
+
+  /* FORMULARIO REGISTRO */
+  .formulario-principal {
+    padding: 30px 12px;
+  }
+
+  .contenedor-formulario {
+    padding: 25px 20px;
+  }
+
+  .restricciones-registro {
+    grid-template-columns: 1fr;
   }
 }

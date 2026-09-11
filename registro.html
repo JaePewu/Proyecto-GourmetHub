@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GourmetHub | Registro</title>
+
+    <link rel="icon" type="image/png" href="assets/img/logo_emblema.png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/registro.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light navbar-gourmet">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/img/logo_letras.png"
+              alt="Logo GourmetHub"
+              class="logo-gourmet"
+            />
+          </a>
+
+          <!-- Hamburguesa -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Abrir menú"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navegación -->
+          <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="registro.html">Registrarse</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Iniciar sesión</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="formulario-principal">
+      <section class="seccion-formulario">
+        <div class="container">
+          <div class="contenedor-formulario">
+            <h1>Crear cuenta</h1>
+
+            <p class="texto-formulario">
+              Regístrate en GourmetHub y personaliza tu experiencia
+              gastronómica.
+            </p>
+
+            <form id="formularioRegistro">
+              <!-- Nombre completo -->
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre completo</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  name="nombre"
+                  maxlength="70"
+                  autocomplete="name"
+                />
+                <p class="mensaje-error" id="errorNombre"></p>
+              </div>
+
+              <!-- Correo -->
+              <div class="mb-3">
+                <label for="correo" class="form-label">
+                  Correo electrónico
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="correo"
+                  name="correo"
+                  maxlength="60"
+                  autocomplete="email"
+                  placeholder="usuario@duoc.cl"
+                />
+                <p class="mensaje-error" id="errorCorreo"></p>
+              </div>
+
+              <!-- Contraseña -->
+              <div class="mb-3">
+                <label for="contrasena" class="form-label">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="contrasena"
+                  name="contrasena"
+                  autocomplete="new-password"
+                />
+                <p class="mensaje-error" id="errorContrasena"></p>
+              </div>
+
+              <!-- Confirmar contraseña -->
+              <div class="mb-4">
+                <label for="confirmarContrasena" class="form-label">
+                  Confirmar contraseña
+                </label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirmarContrasena"
+                  name="confirmarContrasena"
+                  autocomplete="new-password"
+                />
+                <p class="mensaje-error" id="errorConfirmarContrasena"></p>
+              </div>
+
+              <!-- Restricciones alimentarias -->
+              <fieldset class="mb-4">
+                <legend class="form-label">Restricciones alimentarias</legend>
+
+                <div class="restricciones-registro">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input restriccion"
+                      type="checkbox"
+                      value="Celiaco"
+                      id="celiaco"
+                    />
+                    <label class="form-check-label" for="celiaco">
+                      Celíaco
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input restriccion"
+                      type="checkbox"
+                      value="Vegano"
+                      id="vegano"
+                    />
+                    <label class="form-check-label" for="vegano">
+                      Vegano
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input restriccion"
+                      type="checkbox"
+                      value="Vegetariano"
+                      id="vegetariano"
+                    />
+                    <label class="form-check-label" for="vegetariano">
+                      Vegetariano
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input restriccion"
+                      type="checkbox"
+                      value="Intolerante a la Lactosa"
+                      id="lactosa"
+                    />
+                    <label class="form-check-label" for="lactosa">
+                      Intolerante a la lactosa
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input restriccion"
+                      type="checkbox"
+                      value="Frutos Secos"
+                      id="frutosSecos"
+                    />
+                    <label class="form-check-label" for="frutosSecos">
+                      Frutos secos
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input restriccion"
+                      type="checkbox"
+                      value="Ninguna"
+                      id="ninguna"
+                    />
+                    <label class="form-check-label" for="ninguna">
+                      Ninguna
+                    </label>
+                  </div>
+                </div>
+
+                <p class="mensaje-error" id="errorRestricciones"></p>
+              </fieldset>
+
+              <!-- Recetas de interés -->
+              <fieldset class="mb-4">
+                <legend class="form-label">Recetas de interés</legend>
+
+                <div id="contenedorRecetas">
+                  <!-- Primera receta -->
+                  <div class="receta-interes">
+                    <div class="mb-3">
+                      <label for="categoria1" class="form-label">
+                        Categoría
+                      </label>
+                      <select
+                        class="form-select categoria-receta"
+                        id="categoria1"
+                        name="categoria1"
+                      >
+                        <option value="">Selecciona una categoría</option>
+                        <option value="Pasteleria">Pastelería</option>
+                        <option value="Cocina Italiana">Cocina Italiana</option>
+                        <option value="Reposteria">Repostería</option>
+                        <option value="Cocina Oriental">Cocina Oriental</option>
+                        <option value="Barismo">Barismo</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-3">
+                      <p class="form-label">Nivel de experiencia</p>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input nivel-receta"
+                          type="radio"
+                          name="nivel1"
+                          value="Principiante"
+                          id="principiante1"
+                        />
+                        <label class="form-check-label" for="principiante1">
+                          Principiante
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input nivel-receta"
+                          type="radio"
+                          name="nivel1"
+                          value="Intermedio"
+                          id="intermedio1"
+                        />
+                        <label class="form-check-label" for="intermedio1">
+                          Intermedio
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input nivel-receta"
+                          type="radio"
+                          name="nivel1"
+                          value="Avanzado"
+                          id="avanzado1"
+                        />
+                        <label class="form-check-label" for="avanzado1">
+                          Avanzado
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="mensaje-error" id="errorRecetas"></p>
+
+                <button
+                  type="button"
+                  class="btn btn-outline-gourmet"
+                  id="agregarReceta"
+                >
+                  Agregar otra receta
+                </button>
+              </fieldset>
+
+              <!-- Botón -->
+              <button type="submit" class="btn btn-gourmet w-100">
+                Crear cuenta
+              </button>
+            </form>
+
+            <p class="enlace-formulario">
+              ¿Ya tienes una cuenta?
+              <a href="login.html">Inicia sesión</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-gourmet">
+      <div class="container text-center">
+        <p class="mb-1">© 2026 GourmetHub. Todos los derechos reservados.</p>
+        <p class="mb-0">Desarrollo Full Stack II</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
