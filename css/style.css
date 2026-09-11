@@ -1,0 +1,166 @@
+/* GENERAL */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f5ef;
+}
+
+/* NAVBAR */
+.navbar-gourmet {
+  background-color: #17140f;
+}
+
+.logo-gourmet {
+  width: 85px;
+  height: auto;
+}
+
+.navbar-gourmet .nav-link {
+  color: #ffffff;
+}
+
+.navbar-gourmet .nav-link:hover {
+  color: #d6aa58;
+}
+
+.navbar-gourmet .nav-link.active {
+  color: #d6aa58;
+}
+
+/* SECCIÓN PRINCIPAL */
+.seccion-principal {
+  background-color: #211c16;
+  color: #ffffff;
+  padding: 60px 0;
+}
+
+.seccion-principal h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.seccion-principal p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ded8cf;
+  margin-bottom: 25px;
+}
+
+/* Botones principales */
+.botones-principales {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-gourmet {
+  background-color: #b8893d;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-gourmet:hover {
+  background-color: #946d30;
+  color: #ffffff;
+}
+
+/* Imagen principal */
+.imagen-principal {
+  width: 100%;
+  max-width: 750px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* SECCIÓN GOURMET */
+.seccion-gourmet {
+  padding: 60px 0;
+}
+
+.seccion-gourmet h2 {
+  margin-bottom: 40px;
+  color: #2c241b;
+  font-weight: bold;
+}
+
+/* Tarjetas */
+.tarjeta-gourmet {
+  background-color: #ffffff;
+  border: 1px solid #ddd3c5;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.imagen-tarjeta {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.contenido-tarjeta {
+  padding: 25px;
+}
+
+.contenido-tarjeta h3 {
+  color: #946d30;
+  margin-bottom: 15px;
+}
+
+.contenido-tarjeta p {
+  color: #555555;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+.footer-gourmet {
+  background-color: #17140f;
+  color: #ffffff;
+  padding: 20px 0;
+  margin-top: auto;
+  font-size: 14px;
+}
+
+/* Para tablet y celular */
+@media (max-width: 991px) {
+  .seccion-principal {
+    text-align: center;
+  }
+
+  .botones-principales {
+    justify-content: center;
+  }
+
+  .imagen-principal {
+    margin-top: 35px;
+  }
+}
+
+/* Para celular */
+@media (max-width: 576px) {
+  .seccion-principal {
+    padding: 40px 15px;
+  }
+
+  .seccion-principal h1 {
+    font-size: 32px;
+  }
+
+  .seccion-principal p {
+    font-size: 16px;
+  }
+
+  .imagen-principal {
+    height: 240px;
+  }
+
+  .imagen-tarjeta {
+    height: 210px;
+  }
+
+  .logo-gourmet {
+    width: 70px;
+  }
+}
