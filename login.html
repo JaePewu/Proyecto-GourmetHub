@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GourmetHub | Iniciar sesión</title>
+
+    <link rel="icon" type="image/png" href="assets/img/logo_emblema.png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/login.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light navbar-gourmet">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/img/logo_letras.png"
+              alt="Logo GourmetHub"
+              class="logo-gourmet"
+            />
+          </a>
+
+          <!-- Botón para celular -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Abrir menú"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navegación -->
+          <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="registro.html">Registrarse</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="login.html">
+                  Iniciar sesión
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="formulario-principal">
+      <section class="seccion-formulario">
+        <div class="container">
+          <div class="contenedor-formulario">
+            <h1>Iniciar sesión</h1>
+
+            <p class="texto-formulario">
+              Ingresa a tu cuenta y continúa disfrutando de GourmetHub.
+            </p>
+
+            <form id="formularioLogin">
+              <!-- Correo electrónico -->
+              <div class="mb-3">
+                <label for="correoLogin" class="form-label">
+                  Correo electrónico
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="correoLogin"
+                  name="correoLogin"
+                  maxlength="60"
+                  autocomplete="email"
+                  placeholder="usuario@duoc.cl"
+                />
+                <p class="mensaje-error" id="errorCorreoLogin"></p>
+              </div>
+
+              <!-- Contraseña -->
+              <div class="mb-4">
+                <label for="contrasenaLogin" class="form-label">
+                  Contraseña
+                </label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="contrasenaLogin"
+                  name="contrasenaLogin"
+                  autocomplete="current-password"
+                />
+                <p class="mensaje-error" id="errorContrasenaLogin"></p>
+              </div>
+
+              <!-- Botón -->
+              <button type="submit" class="btn btn-gourmet w-100">
+                Iniciar sesión
+              </button>
+            </form>
+
+            <p class="enlace-formulario">
+              ¿Aún no tienes una cuenta?
+              <a href="registro.html">Regístrate</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-gourmet">
+      <div class="container text-center">
+        <p class="mb-1">© 2026 GourmetHub. Todos los derechos reservados.</p>
+        <p class="mb-0">Desarrollo Full Stack II</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
