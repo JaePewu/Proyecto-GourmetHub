@@ -8,24 +8,24 @@ body {
 
 /* NAVBAR */
 .navbar-gourmet {
-  background-color: #17140f;
+  background-color: #f5be60;
 }
 
 .logo-gourmet {
-  width: 85px;
+  width: 145px;
   height: auto;
 }
 
 .navbar-gourmet .nav-link {
-  color: #ffffff;
+  color: #3b2a1a;
 }
 
 .navbar-gourmet .nav-link:hover {
-  color: #d6aa58;
+  color: #b8893d;
 }
 
 .navbar-gourmet .nav-link.active {
-  color: #d6aa58;
+  color: #b8893d;
 }
 
 /* SECCIÓN PRINCIPAL */
