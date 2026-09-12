@@ -236,7 +236,7 @@ formularioRegistro.addEventListener("submit", function (event) {
     }
   });
 
-  //Comprobación final
+  //Comprobación que no existan errores antes de guardar el usuario
   if (
     errorNombre.textContent === "" &&
     errorCorreo.textContent === "" &&
@@ -259,5 +259,8 @@ formularioRegistro.addEventListener("submit", function (event) {
 
     //Mensaje de registro exitoso
     alert("Usuario registrado correctamente!!");
+
+    //Se limpia el formulario
+    formularioRegistro.reset();
   }
 });
