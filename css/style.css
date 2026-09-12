@@ -30,22 +30,40 @@ body {
 
 /* SECCIÓN PRINCIPAL */
 .seccion-principal {
-  background-color: #211c16;
+  background:
+    linear-gradient(
+      /* el degradado va de izquierda a derecha*/ 90deg,
+      rgba(20, 16, 12, 0.65) 0%,
+      rgba(20, 16, 12, 0.25) 45%,
+      rgba(20, 16, 12, 0.05) 100% /* casi transparente al lado derecho */
+    ),
+    url("../assets/img/Banner2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
   color: #ffffff;
-  padding: 60px 0;
+  padding: 70px 0;
 }
 
-.seccion-principal h1 {
-  font-size: 42px;
+.contenido-principal {
+  max-width: 600px;
+  text-align: left;
+}
+
+.contenido-principal h1 {
+  font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.seccion-principal p {
+.contenido-principal p {
   font-size: 18px;
   line-height: 1.6;
-  color: #ded8cf;
-  margin-bottom: 25px;
+  color: #ffffff;
+  margin-bottom: 30px;
 }
 
 /* Botones principales */
@@ -53,6 +71,7 @@ body {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .btn-gourmet {
@@ -64,15 +83,6 @@ body {
 .btn-gourmet:hover {
   background-color: #946d30;
   color: #ffffff;
-}
-
-/* Imagen principal */
-.imagen-principal {
-  width: 100%;
-  max-width: 750px;
-  height: 360px;
-  object-fit: cover;
-  border-radius: 12px;
 }
 
 /* SECCIÓN GOURMET */
@@ -231,54 +241,37 @@ body {
 /* Para tablet y celular */
 @media (max-width: 991px) {
   .seccion-principal {
-    text-align: center;
+    min-height: 480px;
+    background-position: center;
   }
 
-  .botones-principales {
-    justify-content: center;
-  }
-
-  .imagen-principal {
-    margin-top: 35px;
+  .contenido-principal {
+    max-width: 600px;
   }
 }
 
 /* Para celular */
 @media (max-width: 576px) {
   .seccion-principal {
-    padding: 40px 15px;
+    min-height: 450px;
+    padding: 50px 20px;
+    background-position: 65% center;
   }
 
-  .seccion-principal h1 {
-    font-size: 32px;
+  .contenido-principal {
+    max-width: 100%;
+    text-align: center;
   }
 
-  .seccion-principal p {
+  .contenido-principal h1 {
+    font-size: 34px;
+  }
+
+  .contenido-principal p {
     font-size: 16px;
   }
 
-  .imagen-principal {
-    height: 240px;
-  }
-
-  .imagen-tarjeta {
-    height: 210px;
-  }
-
-  .logo-gourmet {
-    width: 70px;
-  }
-
-  /* FORMULARIO REGISTRO */
-  .formulario-principal {
-    padding: 30px 12px;
-  }
-
-  .contenedor-formulario {
-    padding: 25px 20px;
-  }
-
-  .restricciones-registro {
-    grid-template-columns: 1fr;
+  .botones-principales {
+    justify-content: center;
   }
 }
